@@ -87,10 +87,7 @@ AI-Agency-Pro-Dashboard/
 ├── style.css
 ├── script.js
 ├── README.md
-│
-└── assets/
-    ├── images
-    └── screenshots
+
 ```
 
 ---
@@ -194,30 +191,6 @@ index.html
 ```
 
 in your browser.
-
----
-
-## 📷 Screenshots
-
-Add screenshots inside a folder named:
-
-```text
-screenshots
-```
-
-Example:
-
-```md
-![Dashboard Screenshot](screenshots/dashboard.png)
-```
-
-```md
-![Analytics](screenshots/analytics.png)
-```
-
-```md
-![Mobile View](screenshots/mobile.png)
-```
 
 ---
 
