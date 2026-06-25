@@ -176,13 +176,13 @@ This project includes:
 ### Clone Repository
 
 ```bash
-git clone https://github.com/your-username/AI-Agency-Pro-Dashboard.git
+git clone https://github.com/sheezakanwal77/AI-Agency-Dashboard.git
 ```
 
 ### Open Project
 
 ```bash
-cd AI-Agency-Pro-Dashboard
+cd AI-Agency-Dashboard
 ```
 
 ### Run Project
