@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Agency Pro Dashboard</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+    <div class="logo">
+        <h2>AI Agency</h2>
+    </div>
+
+    <ul>
+
+        <li class="active nav-item">
+            <i class="bi bi-grid"></i>
+            Dashboard
+        </li>
+
+        <li class="nav-item">
+            <i class="bi bi-people"></i>
+            Clients
+        </li>
+
+        <li class="nav-item">
+            <i class="bi bi-briefcase"></i>
+            Projects
+        </li>
+
+        <li class="nav-item">
+            <i class="bi bi-robot"></i>
+            AI Requests
+        </li>
+
+        <li class="nav-item">
+            <i class="bi bi-bar-chart"></i>
+            Analytics
+        </li>
+
+        <li class="nav-item">
+            <i class="bi bi-gear"></i>
+            Settings
+        </li>
+
+    </ul>
+
+</div>
+
+<!-- Main -->
+
+<div class="main-content">
+
+    <!-- Topbar -->
+
+    <div class="topbar">
+
+        <div class="search-box">
+
+            <i class="bi bi-search"></i>
+
+            <input
+            type="text"
+            id="searchInput"
+            placeholder="Search Orders...">
+
+        </div>
+
+        <div class="top-actions">
+
+            <button id="themeToggle">
+                <i class="bi bi-moon-fill"></i>
+            </button>
+
+            <!-- Notifications -->
+
+            <div class="notification">
+
+                <i
+                class="bi bi-bell-fill"
+                id="bellBtn"></i>
+
+                <span>3</span>
+
+                <div
+                class="notification-panel">
+
+                    <h6>Notifications</h6>
+
+                    <p>New Client Added</p>
+                    <p>AI Project Approved</p>
+                    <p>Revenue Increased</p>
+
+                </div>
+
+            </div>
+
+            <!-- Profile -->
+
+            <div class="profile-wrapper">
+
+                <img
+                src="https://i.pravatar.cc/150?img=12"
+                class="profile">
+
+                <div class="profile-menu">
+
+                    <p>My Profile</p>
+                    <p>Settings</p>
+                    <p>Logout</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Hero -->
+
+    <div class="hero-card">
+
+        <div>
+
+            <h1>
+                Welcome Back 👋
+            </h1>
+
+            <p>
+                Manage your AI agency operations efficiently.
+            </p>
+
+        </div>
+
+        <div>
+
+            <button
+            class="hero-btn"
+            id="reportBtn">
+
+                Generate Report
+
+            </button>
+
+            <button
+            class="hero-btn green"
+            id="newLeadBtn">
+
+                Add Lead
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Stats -->
+
+    <div class="stats-grid">
+
+        <div class="stat-card">
+
+            <i class="bi bi-people-fill"></i>
+
+            <h3 id="clientCount">
+                0
+            </h3>
+
+            <p>Total Clients</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <i class="bi bi-briefcase-fill"></i>
+
+            <h3 id="projectCount">
+                0
+            </h3>
+
+            <p>Projects</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <i class="bi bi-currency-dollar"></i>
+
+            <h3 id="revenueCount">
+                $0
+            </h3>
+
+            <p>Revenue</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <i class="bi bi-robot"></i>
+
+            <h3 id="aiCount">
+                0
+            </h3>
+
+            <p>AI Requests</p>
+
+        </div>
+
+    </div>
+
+    <!-- Charts -->
+
+    <!-- Orders -->
+
+    <div class="orders-card">
+
+        <h3>
+            Recent Orders
+        </h3>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Client</th>
+                    <th>Service</th>
+                    <th>Status</th>
+                    <th>Amount</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="ordersTable">
+
+                <tr>
+                    <td>John</td>
+                    <td>AI Chatbot</td>
+                    <td>Completed</td>
+                    <td>$800</td>
+                </tr>
+
+                <tr>
+                    <td>Sarah</td>
+                    <td>Automation</td>
+                    <td>Pending</td>
+                    <td>$1200</td>
+                </tr>
+
+                <tr>
+                    <td>Alex</td>
+                    <td>AI Website</td>
+                    <td>Completed</td>
+                    <td>$950</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <!-- Team -->
+
+    <div class="team-section">
+
+        <h3>
+            Team Members
+        </h3>
+
+        <div class="team-grid">
+
+            <div class="member">
+                <img src="https://i.pravatar.cc/150?img=1">
+                <h5>Emma</h5>
+                <p>AI Engineer</p>
+            </div>
+
+            <div class="member">
+                <img src="https://i.pravatar.cc/150?img=2">
+                <h5>David</h5>
+                <p>ML Engineer</p>
+            </div>
+
+            <div class="member">
+                <img src="https://i.pravatar.cc/150?img=3">
+                <h5>Olivia</h5>
+                <p>Prompt Expert</p>
+            </div>
+
+            <div class="member">
+                <img src="https://i.pravatar.cc/150?img=4">
+                <h5>James</h5>
+                <p>Frontend Dev</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Activity -->
+
+    <div class="activity-card">
+
+        <h3>
+            Recent Activity
+        </h3>
+
+        <ul id="activityList">
+
+            <li>New AI chatbot deployed</li>
+            <li>Client meeting completed</li>
+            <li>Revenue increased by 15%</li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
